@@ -18,7 +18,7 @@ namespace CustomerHealthCheckAPI.Services
             {
                 var client = _httpClientFactory.CreateClient("GitHub");
                 client.BaseAddress = new Uri("https://api.github.com");
-                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "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");
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", "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");
                 var productInfo = new ProductInfoHeaderValue("myApp", "v1.1");
                 client.DefaultRequestHeaders.UserAgent.Add(productInfo);
                 var response = await client.GetAsync($"/users/{username}");
